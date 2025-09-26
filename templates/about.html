@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Pure Earth Consultancy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="{{ url_for('home') }}" class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Pure Earth Logo"></a>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}#hero">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero parallax-section" data-speed="0.5" style="background-image: url('{{ url_for('static', filename='images/about-hero.jpg') }}');">
+    <div class="overlay"></div>
+    <div class="hero-content scroll-animate">
+      <h1>About Pure Earth Consultancy</h1>
+      <p>Our mission is to guide businesses and communities towards sustainable solutions.</p>
+    </div>
+  </section>
+
+  <!-- Company Overview -->
+  <section id="about" class="about-section scroll-animate">
+    <div class="section-content">
+      <h2>Who We Are</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Pure Earth Consultancy is a team of environmental experts dedicated to helping businesses and communities implement sustainable practices. We combine industry knowledge with innovative solutions to protect the environment and create lasting positive impact.</p>
+          <p>We specialise in audits, carbon reduction strategies, renewable energy planning, and environmental training to ensure our clients meet compliance standards while promoting sustainability.</p>
+        </div>
+        <div class="about-image">
+          <img src="{{ url_for('static', filename='images/about-team.jpg') }}" alt="Our Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission, Vision, Values -->
+  <section class="mission-section scroll-animate">
+    <div class="section-content">
+      <h2>Our Mission, Vision & Values</h2>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <h3>Mission</h3>
+          <p>To empower organisations to adopt sustainable practices that positively impact the environment and society.</p>
+        </div>
+        <div class="mission-card">
+          <h3>Vision</h3>
+          <p>To create a world where businesses thrive while protecting and restoring the environment.</p>
+        </div>
+        <div class="mission-card">
+          <h3>Values</h3>
+          <p>Integrity, innovation, sustainability, and collaboration are at the core of everything we do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section scroll-animate">
+    <div class="section-content">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Amrish T.">
+          <h3>Amrish T.</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Nishil T.">
+          <h3>Nishil T.</h3>
+          <p>Operations Manager</p>
+        </div>
+        <div class="team-member">
+          <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Dash T.">
+          <h3>Dash T.</h3>
+          <p>Environmental Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="{{ url_for('static', filename='images/team4.jpg') }}" alt="Darshil T.">
+          <h3>Darshil T.</h3>
+          <p>Renewable Energy Consultant</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner scroll-animate">
+    <h2>Join us in making the world greener</h2>
+    <a href="{{ url_for('home') }}#contact" class="btn-cta">Contact Us Today</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Pure Earth Consultancy. All rights reserved.
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
